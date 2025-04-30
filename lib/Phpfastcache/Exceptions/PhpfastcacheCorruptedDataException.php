@@ -22,7 +22,7 @@ class PhpfastcacheCorruptedDataException extends PhpfastcacheDriverException
      * @param string $message
      * @param mixed|null $corruptedData
      */
-    public function __construct(protected string $message = '', protected mixed $corruptedData = null)
+    public function __construct(protected $message = '', protected mixed $corruptedData = null)
     {
         parent::__construct($message);
     }
